@@ -332,6 +332,7 @@ canvas
       <select id="m-tipo" style="border:1px solid var(--bdr);border-radius:6px;padding:7px 6px;font-family:'DM Mono',monospace;font-size:10px;outline:none;background:var(--white);cursor:pointer;color:var(--ink2)">
         <option value="vuelta">Vuelta</option>
         <option value="cante">Cante</option>
+        <option value="dossier">Dossier</option>
       </select>
       <button id="m-add-btn" style="background:var(--ink);border:none;border-radius:6px;padding:7px 16px;font-family:'DM Mono',monospace;font-size:12px;color:var(--cream);cursor:pointer">+</button>
     </div>
@@ -516,7 +517,11 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 const COLORS=['#6366f1','#ec4899','#f59e0b','#10b981','#3b82f6','#8b5cf6','#ef4444','#14b8a6','#f97316'];
 const MESES=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-const TIPOS={vuelta:{label:'Vuelta',bg:'#e8ddd0',fg:'#6b4e2e'},cante:{label:'Cante',bg:'#fde68a',fg:'#c07828'}};
+const TIPOS={
+  vuelta:{label:'Vuelta',bg:'#e8ddd0',fg:'#6b4e2e'},
+  cante:{label:'Cante',bg:'#fde68a',fg:'#c07828'},
+  dossier:{label:'Dossier',bg:'#dbeafe',fg:'#1d4ed8'}
+};
 const MOTIVATIONS=[
   {text:"El éxito no es definitivo, el fracaso no es fatal: lo que cuenta es el valor para continuar.",author:"Winston Churchill"},
   {text:"Cada día que estudias es un día más cerca de ver tu nombre en esa lista.",author:""},
